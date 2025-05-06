@@ -21,13 +21,13 @@ export default function Carrousel() {
         "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542459/clau_xeskkb.png",
     },
     {
-        id: 7,
-        title: "Estamos para vos",
-        description:
-          "No importa cuál sea tu situación legal, estamos acá para escucharte y ayudarte. Deslizá el carrusel y descubrí cómo podemos acompañarte.",
-        image:
-          "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542342/general_aa7rnx.png",
-      },
+      id: 7,
+      title: "Estamos para vos",
+      description:
+        "No importa cuál sea tu situación legal, estamos acá para escucharte y ayudarte. Deslizá el carrusel y descubrí cómo podemos acompañarte.",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542342/general_aa7rnx.png",
+    },
     {
       id: 2,
       title: "Servicios Legales",
@@ -49,28 +49,32 @@ export default function Carrousel() {
       title: "Derecho de Familia",
       description:
         "Divorcios, tenencia, régimen de comunicación, adopciones, alimentos y más.",
-      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543199/pexels-photo-7876053_on0kt4.jpg",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543199/pexels-photo-7876053_on0kt4.jpg",
     },
     {
       id: 4,
       title: "Derecho Laboral",
       description:
         "Despidos injustificados, acoso laboral, reclamos salariales y defensa del trabajador.",
-      image: "https://images.pexels.com/photos/4481258/pexels-photo-4481258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image:
+        "https://images.pexels.com/photos/4481258/pexels-photo-4481258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: 5,
       title: "Derecho Civil",
       description:
         "Sucesiones, daños y perjuicios, derecho inmobiliario, accidentes (ART).",
-      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543718/2b54ebb1-8ba9-40bd-8973-d0234a6eabad_m8xln8.jpg",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543718/2b54ebb1-8ba9-40bd-8973-d0234a6eabad_m8xln8.jpg",
     },
     {
       id: 6,
       title: "Jubilaciones y Pensiones",
       description:
         "Te asesoramos y acompañamos en cada paso para que accedas a lo que te corresponde.",
-      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543608/pexels-photo-7681200_dcctxm.jpg",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543608/pexels-photo-7681200_dcctxm.jpg",
     },
   ];
 
@@ -171,7 +175,7 @@ export default function Carrousel() {
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold mb-2 text-center text-[#5c4532]">
+                    <h3 className="text-xl font-serif font-bold mb-2 text-center text-[#5c4532]">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 text-sm text-center">

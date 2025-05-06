@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X, ChevronDown, Phone, Mail, MapPin, Clock } from "lucide-react";
 import Carrousel from "../components/Carrousel";
 import ScrollBackground from "../components/ScrollBackground";
+import Nosotros from "../components/Nosotros";
+import Areas from "../components/Areas";
 
 export default function Inicio() {
   const [formData, setFormData] = useState({
@@ -36,7 +38,7 @@ export default function Inicio() {
     <div className="font-sans text-gray-800 min-h-screen">
       {/* Hero Section */}
       <section className="pt-24 md:pt-32 relative bg-[#f8f6f2]">
-        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-12 md:py-24">
+        <div className="container mx-auto px-8 sm:px-12 md:px-18 lg:px-24 py-12 md:py-24">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-8 lg:pr-16 z-10">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-6 text-[#4a4a4a]">
@@ -101,128 +103,19 @@ export default function Inicio() {
         {/* Gradient fade at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
-       
+
       <Carrousel />
 
       {/* Áreas de Práctica */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h6 className="text-[#5c4532] font-medium mb-2">NUESTRAS ÁREAS</h6>
-            <h2 className="text-3xl font-serif font-medium">
-              Áreas de Práctica
-            </h2>
-            <div className="w-24 h-1 bg-[#5c4532] mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Derecho de Familia",
-                icon: "👨‍👩‍👧‍👦",
-                description:
-                  "Divorcios, sucesiones, régimen patrimonial, filiación y adopciones.",
-              },
-              {
-                title: "Derecho Laboral",
-                icon: "👩🏽‍💼",
-                description:
-                  "Despidos, indemnizaciones, accidentes laborales y reclamos salariales.",
-              },
-              {
-                title: "Derecho Civil",
-                icon: "⚖️",
-                description:
-                  "Contratos, daños y perjuicios, responsabilidad civil y derechos reales.",
-              },
-              {
-                title: "Jubilaciones y Pensiones",
-                icon: "👵",
-                description:
-                  "Asesoramiento previsional, reajustes y pensiones por fallecimiento.",
-              },
-              {
-                title: "Derecho Comercial",
-                icon: "📊",
-                description:
-                  "Constitución de sociedades, contratos comerciales y asesoramiento empresarial.",
-              },
-              {
-                title: "Mediación",
-                icon: "🤝",
-                description:
-                  "Mediación prejudicial obligatoria y resolución alternativa de conflictos.",
-              },
-            ].map((area, index) => (
-              <div
-                key={index}
-                className="bg-[#f8f6f2] p-6 rounded-lg hover:shadow-md transition-all hover:-translate-y-1 group"
-              >
-                <div className="text-3xl mb-4">{area.icon}</div>
-                <h3 className="text-xl font-medium mb-3 group-hover:text-[#5c4532] transition-all">
-                  {area.title}
-                </h3>
-                <p className="text-gray-600">{area.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Areas />
 
       {/* Sobre Nosotros */}
-      <section className="py-16 bg-[#f8f6f2]">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <div className="relative">
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#5c4532] opacity-20 rounded-full"></div>
-                <img
-                  src="/api/placeholder/500/600"
-                  alt="Dra. Claudia Simón"
-                  className="rounded-lg shadow-lg z-10 relative"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 md:pl-12">
-              <h6 className="text-[#5c4532] font-medium mb-2">
-                CONOZCA NUESTRO ESTUDIO
-              </h6>
-              <h2 className="text-3xl font-serif font-medium mb-6">
-                Dra. Claudia Simón & Asociados
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Nuestro estudio jurídico fue fundado con la misión de brindar
-                asesoramiento legal integral y personalizado. Contamos con un
-                equipo de profesionales especializados en diversas áreas del
-                derecho, comprometidos con la excelencia y la búsqueda de las
-                mejores soluciones para nuestros clientes.
-              </p>
-              <p className="text-gray-600 mb-6">
-                La Dra. Claudia Simón, abogada egresada de la Universidad de
-                Buenos Aires (UBA), lidera nuestro equipo con más de 15 años de
-                experiencia en el ejercicio de la profesión.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="/api/placeholder/60/60"
-                  alt="Firma"
-                  className="w-16 h-16 rounded-full"
-                />
-                <div className="ml-4">
-                  <h4 className="font-medium">Dra. Claudia Simón</h4>
-                  <p className="text-sm text-gray-600">Abogada UBA</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Nosotros />
 
       <ScrollBackground />
 
-
       {/* Testimonios */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h6 className="text-[#5c4532] font-medium mb-2">TESTIMONIOS</h6>
@@ -278,7 +171,7 @@ export default function Inicio() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contacto */}
       <section className="py-16 bg-[#f8f6f2]">
