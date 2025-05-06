@@ -18,7 +18,7 @@ export default function Navbar() {
     <>
       <header
         className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+          scrolled ? "bg-white shadow-md py-2" : "bg-white/80 py-4"
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
