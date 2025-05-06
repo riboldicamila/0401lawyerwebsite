@@ -25,7 +25,7 @@ export default function Footer() {
                   <a
                     key={social}
                     href="#"
-                    className="bg-[#a67e5b] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#8e6b4e] transition-all"
+                    className="bg-[#5c4532] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#8e6b4e] transition-all"
                   >
                     <span className="sr-only">{social}</span>
                     {/* Aquí irían los íconos de redes sociales */}

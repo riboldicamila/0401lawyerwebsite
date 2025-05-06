@@ -41,7 +41,7 @@ export default function Inicio() {
             <div className="md:w-1/2 md:pr-8 lg:pr-16 z-10">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-6 text-[#4a4a4a]">
                 Asesoramiento legal{" "}
-                <span className="text-[#a67e5b] block mt-1">
+                <span className="text-[#5c4532] block mt-1">
                   profesional y personalizado
                 </span>
               </h1>
@@ -51,14 +51,14 @@ export default function Inicio() {
                 áreas del derecho.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#a67e5b] text-white px-6 py-3 rounded hover:bg-[#8e6b4e] transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
+                <button className="bg-[#5c4532] text-white px-6 py-3 rounded hover:bg-[#8e6b4e] transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
                   Consulta Gratuita{" "}
                   <ChevronDown
                     size={16}
                     className="transition-transform group-hover:rotate-180"
                   />
                 </button>
-                <button className="border border-[#a67e5b] text-[#a67e5b] px-6 py-3 rounded hover:bg-[#f5f0e8] transition-all duration-300 shadow-sm hover:shadow-md">
+                <button className="border border-[#5c4532] text-[#5c4532] px-6 py-3 rounded hover:bg-[#f5f0e8] transition-all duration-300 shadow-sm hover:shadow-md">
                   Servicios
                 </button>
               </div>
@@ -67,7 +67,7 @@ export default function Inicio() {
             <div className="md:w-1/2 mt-12 md:mt-0 relative">
               <div className="relative flex items-center justify-center h-[550px] max-h-[80vh]">
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#8c9884] opacity-20 rounded-full"></div>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#a67e5b] opacity-20 rounded-full"></div>
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#5c4532] opacity-20 rounded-full"></div>
 
                 <div className="relative w-full h-full flex items-center justify-center">
                   <div className="absolute z-10 w-3/5 h-[95%] shadow-lg rounded-lg overflow-hidden left-0">
@@ -108,11 +108,11 @@ export default function Inicio() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h6 className="text-[#a67e5b] font-medium mb-2">NUESTRAS ÁREAS</h6>
+            <h6 className="text-[#5c4532] font-medium mb-2">NUESTRAS ÁREAS</h6>
             <h2 className="text-3xl font-serif font-medium">
               Áreas de Práctica
             </h2>
-            <div className="w-24 h-1 bg-[#a67e5b] mx-auto mt-4"></div>
+            <div className="w-24 h-1 bg-[#5c4532] mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -159,7 +159,7 @@ export default function Inicio() {
                 className="bg-[#f8f6f2] p-6 rounded-lg hover:shadow-md transition-all hover:-translate-y-1 group"
               >
                 <div className="text-3xl mb-4">{area.icon}</div>
-                <h3 className="text-xl font-medium mb-3 group-hover:text-[#a67e5b] transition-all">
+                <h3 className="text-xl font-medium mb-3 group-hover:text-[#5c4532] transition-all">
                   {area.title}
                 </h3>
                 <p className="text-gray-600">{area.description}</p>
@@ -175,7 +175,7 @@ export default function Inicio() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <div className="relative">
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#a67e5b] opacity-20 rounded-full"></div>
+                <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#5c4532] opacity-20 rounded-full"></div>
                 <img
                   src="/api/placeholder/500/600"
                   alt="Dra. Claudia Simón"
@@ -184,7 +184,7 @@ export default function Inicio() {
               </div>
             </div>
             <div className="md:w-1/2 md:pl-12">
-              <h6 className="text-[#a67e5b] font-medium mb-2">
+              <h6 className="text-[#5c4532] font-medium mb-2">
                 CONOZCA NUESTRO ESTUDIO
               </h6>
               <h2 className="text-3xl font-serif font-medium mb-6">
@@ -225,11 +225,11 @@ export default function Inicio() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h6 className="text-[#a67e5b] font-medium mb-2">TESTIMONIOS</h6>
+            <h6 className="text-[#5c4532] font-medium mb-2">TESTIMONIOS</h6>
             <h2 className="text-3xl font-serif font-medium">
               Lo que dicen nuestros clientes
             </h2>
-            <div className="w-24 h-1 bg-[#a67e5b] mx-auto mt-4"></div>
+            <div className="w-24 h-1 bg-[#5c4532] mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -257,7 +257,7 @@ export default function Inicio() {
                 key={index}
                 className="bg-[#f8f6f2] p-6 rounded-lg hover:shadow-md transition-all"
               >
-                <div className="text-3xl text-[#a67e5b] mb-4">"</div>
+                <div className="text-3xl text-[#5c4532] mb-4">"</div>
                 <p className="text-gray-600 mb-6 italic">
                   {testimonial.comment}
                 </p>
@@ -285,7 +285,7 @@ export default function Inicio() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h6 className="text-[#a67e5b] font-medium mb-2">CONTÁCTENOS</h6>
+              <h6 className="text-[#5c4532] font-medium mb-2">CONTÁCTENOS</h6>
               <h2 className="text-3xl font-serif font-medium mb-6">
                 ¿Necesita asesoramiento legal?
               </h2>
@@ -296,7 +296,7 @@ export default function Inicio() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-[#a67e5b] p-3 rounded-full text-white mr-4">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
                     <Phone size={20} />
                   </div>
                   <div>
@@ -307,7 +307,7 @@ export default function Inicio() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-[#a67e5b] p-3 rounded-full text-white mr-4">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
                     <Mail size={20} />
                   </div>
                   <div>
@@ -317,7 +317,7 @@ export default function Inicio() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-[#a67e5b] p-3 rounded-full text-white mr-4">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
                     <MapPin size={20} />
                   </div>
                   <div>
@@ -330,7 +330,7 @@ export default function Inicio() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-[#a67e5b] p-3 rounded-full text-white mr-4">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
                     <Clock size={20} />
                   </div>
                   <div>
@@ -364,7 +364,7 @@ export default function Inicio() {
                       id="nombre"
                       value={formData.nombre}
                       onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#a67e5b] focus:border-transparent transition-all"
+                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
                       placeholder="Ingrese su nombre completo"
                     />
                   </div>
@@ -381,7 +381,7 @@ export default function Inicio() {
                       id="email"
                       value={formData.email}
                       onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#a67e5b] focus:border-transparent transition-all"
+                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
                       placeholder="Ingrese su correo electrónico"
                     />
                   </div>
@@ -398,7 +398,7 @@ export default function Inicio() {
                       id="telefono"
                       value={formData.telefono}
                       onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#a67e5b] focus:border-transparent transition-all"
+                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
                       placeholder="Ingrese su número de teléfono"
                     />
                   </div>
@@ -414,7 +414,7 @@ export default function Inicio() {
                       id="asunto"
                       value={formData.asunto}
                       onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#a67e5b] focus:border-transparent transition-all"
+                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
                     >
                       <option value="">Seleccione un área de consulta</option>
                       <option value="familia">Derecho de Familia</option>
@@ -439,7 +439,7 @@ export default function Inicio() {
                       id="mensaje"
                       value={formData.mensaje}
                       onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#a67e5b] focus:border-transparent transition-all"
+                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
                       placeholder="Describa brevemente su consulta"
                       rows="4"
                     ></textarea>
@@ -447,7 +447,7 @@ export default function Inicio() {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-[#a67e5b] text-white py-3 rounded hover:bg-[#8e6b4e] transition-all font-medium"
+                    className="w-full bg-[#5c4532] text-white py-3 rounded hover:bg-[#8e6b4e] transition-all font-medium"
                   >
                     Enviar Consulta
                   </button>

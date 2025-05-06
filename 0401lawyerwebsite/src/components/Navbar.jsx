@@ -49,9 +49,9 @@ export default function Navbar() {
               <button
                 key={item}
                 onClick={() => setActiveSection(item.toLowerCase())}
-                className={`text-sm font-medium transition-all hover:text-[#a67e5b] ${
+                className={`text-sm font-medium transition-all hover:text-[#5c4532] ${
                   activeSection === item.toLowerCase()
-                    ? "text-[#a67e5b] border-b-2 border-[#a67e5b]"
+                    ? "text-[#5c4532] border-b-2 border-[#5c4532]"
                     : "text-gray-700"
                 }`}
               >
@@ -83,7 +83,7 @@ export default function Navbar() {
                     }}
                     className={`text-sm font-medium p-2 transition-all hover:bg-[#f5f0e8] ${
                       activeSection === item.toLowerCase()
-                        ? "text-[#a67e5b] bg-[#f5f0e8]"
+                        ? "text-[#5c4532] bg-[#f5f0e8]"
                         : "text-gray-700"
                     }`}
                   >

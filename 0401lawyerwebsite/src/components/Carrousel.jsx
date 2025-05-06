@@ -98,7 +98,7 @@ export default function Carrousel() {
   return (
     <section
       ref={sectionRef}
-      className="relative pt-40 md:pt-60 pb-16 md:pb-24 overflow-hidden bg-gray-900"
+      className="relative pt-40 md:pt-60 pb-16 md:pb-24 overflow-hidden bg-gray-900 font-sans"
     >
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/60 to-[#1a1a1a]/80"></div>
@@ -117,7 +117,7 @@ export default function Carrousel() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-white mb-4 ">
             Estudio Jurídico Especializado
           </h2>
         </div>
@@ -141,7 +141,7 @@ export default function Carrousel() {
               el: paginationRef.current,
               clickable: true,
               renderBullet: function (index, className) {
-                return `<span class="${className} w-2 h-2 bg-[#f5f0e8] hover:bg-[#a67e5b] mx-1 rounded-full transition-all duration-300"></span>`;
+                return `<span class="${className} w-2 h-2 bg-[#f5f0e8] hover:bg-[#5c4532] mx-1 rounded-full transition-all duration-300"></span>`;
               },
             }}
             breakpoints={{
@@ -171,7 +171,7 @@ export default function Carrousel() {
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold mb-2 text-center text-[#a67e5b]">
+                    <h3 className="text-xl font-bold mb-2 text-center text-[#5c4532]">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 text-sm text-center">
