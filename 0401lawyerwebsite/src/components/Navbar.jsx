@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Menu, X, MapPin } from "lucide-react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,18 +15,26 @@ export default function Navbar() {
   }, []);
 
   return (
-    <>
-      <header
-        className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-2" : "bg-white/80 py-4"
-        }`}
-      >
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md" : "bg-white/80"
+      }`}
+    >
+      {/* Top black bar */}
+      <div className="bg-black text-white text-xs w-full flex items-center py-2">
+        <div className="container mx-auto px-4 flex items-center">
+          <MapPin size={12} className="mr-1" />
+          <span>Rawson 11, Campana, Argentina</span>
+        </div>
+      </div>
+
+      {/* Main navbar */}
+      <div className={`w-full ${scrolled ? "py-2" : "py-4"}`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-3xl font-serif italic">
-              <span className="text-[#b89f7e]">S</span>
-            </div>
+            <img src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746539200/black-logo_y25bjf.png" alt="Logo" className="h-8 md:h-10" />
+
             <div className="ml-2 hidden md:block">
               <h1 className="text-lg font-medium">
                 Dra. Claudia Simón & Asoc.
@@ -86,7 +94,7 @@ export default function Navbar() {
             </div>
           </div>
         )}
-      </header>
-    </>
+      </div>
+    </header>
   );
 }

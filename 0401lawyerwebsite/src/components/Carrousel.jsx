@@ -36,6 +36,20 @@ export default function Carrousel() {
         "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
       image: "/api/placeholder/600/400", // Replace with your actual image
     },
+    {
+      id: 4,
+      title: "Expert-Driven Solutions",
+      description:
+        "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
+      image: "/api/placeholder/600/400", // Replace with your actual image
+    },
+    {
+      id: 5,
+      title: "Expert-Driven Solutions",
+      description:
+        "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
+      image: "/api/placeholder/600/400", // Replace with your actual image
+    },
   ];
 
   // Handle scroll visibility with Intersection Observer
@@ -69,7 +83,7 @@ export default function Carrousel() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/60 to-[#1a1a1a]/80"></div>
         <img
-          src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746526986/closeup-shot-dome-with-victoria-statue-metropolis-building-madrid-spain_181624-32258_o4gdbr.jpg" 
+          src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746526986/closeup-shot-dome-with-victoria-statue-metropolis-building-madrid-spain_181624-32258_o4gdbr.jpg"
           alt="Background"
           className="object-cover w-full h-full"
         />
