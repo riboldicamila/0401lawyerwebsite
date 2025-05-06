@@ -22,17 +22,14 @@ const ScrollBackground = () => {
       className="relative h-60 bg-cover bg-top"
       style={{
         backgroundImage:
-          'url("https://res.cloudinary.com/dav7tzdzv/image/upload/v1746540972/background_ozjep7.png")',
+          'url("https://res.cloudinary.com/dav7tzdzv/image/upload/v1746558072/document-agreement-documents-sign-48148_tojkz8.jpg")',
         backgroundPosition,
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-white text-center pt-40">
-        <h1 className="text-4xl font-bold">
-          FRASE Conocé la historia de nuestro estudio
-        </h1>
         <p className="text-xl mt-4">
-          El Estudio Mazzinghi fue fundado en 1952, por Jorge Adolfo Mazzinghi
+          Defensa legal honesta y cercana, para cada argentino.
         </p>
       </div>
     </div>

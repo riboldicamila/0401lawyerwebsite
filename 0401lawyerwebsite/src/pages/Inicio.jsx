@@ -1,38 +1,10 @@
-import { useState } from "react";
-import { Menu, X, ChevronDown, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Mail, MapPin, Clock, MessageCircle, ExternalLink, Instagram, Facebook  } from "lucide-react";
 import Carrousel from "../components/Carrousel";
 import ScrollBackground from "../components/ScrollBackground";
 import Nosotros from "../components/Nosotros";
 import Areas from "../components/Areas";
 
 export default function Inicio() {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    telefono: "",
-    asunto: "",
-    mensaje: "",
-  });
-
-  const handleFormChange = (e) => {
-    const { id, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [id]: value,
-    }));
-  };
-
-  const handleSubmit = () => {
-    console.log("Formulario enviado:", formData);
-    alert("Gracias por su mensaje. Nos pondremos en contacto pronto.");
-    setFormData({
-      nombre: "",
-      email: "",
-      telefono: "",
-      asunto: "",
-      mensaje: "",
-    });
-  };
 
   return (
     <div className="font-sans text-gray-800 min-h-screen">
@@ -106,96 +78,35 @@ export default function Inicio() {
 
       <Carrousel />
 
-      {/* Áreas de Práctica */}
       <Areas />
 
-      {/* Sobre Nosotros */}
       <Nosotros />
 
       <ScrollBackground />
 
-      {/* Testimonios */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h6 className="text-[#5c4532] font-medium mb-2">TESTIMONIOS</h6>
-            <h2 className="text-3xl font-serif font-medium">
-              Lo que dicen nuestros clientes
-            </h2>
-            <div className="w-24 h-1 bg-[#5c4532] mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "María González",
-                position: "Cliente Derecho Familiar",
-                comment:
-                  "Excelente atención y profesionalismo. Resolvieron mi caso de divorcio con gran eficiencia y humanidad.",
-              },
-              {
-                name: "Carlos Rodríguez",
-                position: "Cliente Jubilación",
-                comment:
-                  "Gracias a su asesoramiento pude obtener mi jubilación sin complicaciones. Altamente recomendable.",
-              },
-              {
-                name: "Laura Fernández",
-                position: "Cliente Derecho Laboral",
-                comment:
-                  "Me ayudaron a resolver un conflicto laboral complejo con resultados muy favorables. Gran equipo de profesionales.",
-              },
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-[#f8f6f2] p-6 rounded-lg hover:shadow-md transition-all"
-              >
-                <div className="text-3xl text-[#5c4532] mb-4">"</div>
-                <p className="text-gray-600 mb-6 italic">
-                  {testimonial.comment}
-                </p>
-                <div className="flex items-center">
-                  <img
-                    src="/api/placeholder/50/50"
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div className="ml-4">
-                    <h4 className="font-medium">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">
-                      {testimonial.position}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Contacto */}
       <section className="py-16 bg-[#f8f6f2]">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 mb-8 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-center">
+            <div className="md:w-2/3">
               <h6 className="text-[#5c4532] font-medium mb-2">CONTÁCTENOS</h6>
               <h2 className="text-3xl font-serif font-medium mb-6">
                 ¿Necesita asesoramiento legal?
               </h2>
               <p className="text-gray-600 mb-8">
-                Complete el formulario y nos pondremos en contacto con usted a
-                la brevedad para coordinar una consulta.
+                Póngase en contacto con nosotros a través de cualquiera de los
+                siguientes medios y le atenderemos a la brevedad posible.
               </p>
 
-              <div className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex items-start">
                   <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
                     <Phone size={20} />
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Teléfono / Whatsapp</h4>
-                    <p className="text-gray-600">(03489) 15452601</p>
-                    <p className="text-gray-600">Tel/Fax: (03489) 422409</p>
+                    <h4 className="font-medium mb-1">Teléfono</h4>
+                    <p className="text-gray-600">(03489) 422409</p>
+                    <p className="text-gray-600">(03489) 452601</p>
                   </div>
                 </div>
 
@@ -215,10 +126,10 @@ export default function Inicio() {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Dirección</h4>
+                    <p className="text-gray-600">Rawson 11</p>
                     <p className="text-gray-600">
-                      Av. Libertador 123, Piso 4, Oficina B
+                      Campana, Buenos Aires, Argentina
                     </p>
-                    <p className="text-gray-600">Buenos Aires, Argentina</p>
                   </div>
                 </div>
 
@@ -229,121 +140,50 @@ export default function Inicio() {
                   <div>
                     <h4 className="font-medium mb-1">Horario de atención</h4>
                     <p className="text-gray-600">
-                      Lunes a Viernes: 9:00 - 18:00
+                      Lunes a Viernes: 8:30 - 12:30 y 16:30 - 19:30
                     </p>
+                    <p className="text-gray-600">Sábados: Cerrado</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
+                    <MessageCircle size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-1">WhatsApp</h4>
                     <p className="text-gray-600">
-                      Sábados: Solo con cita previa
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=5493489452601&text&type=phone_number&app_absent=0"
+                        className="text-[#5c4532] hover:underline"
+                      >
+                        Enviar mensaje
+                      </a>
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="md:w-1/2 md:pl-12">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-medium mb-6">
-                  Formulario de Contacto
-                </h3>
-                <div>
-                  <div className="mb-4">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="nombre"
-                    >
-                      Nombre y Apellido
-                    </label>
-                    <input
-                      type="text"
-                      id="nombre"
-                      value={formData.nombre}
-                      onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
-                      placeholder="Ingrese su nombre completo"
-                    />
+                <div className="flex items-start">
+                  <div className="bg-[#5c4532] p-3 rounded-full text-white mr-4">
+                    <ExternalLink size={20} />
                   </div>
-
-                  <div className="mb-4">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      value={formData.email}
-                      onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
-                      placeholder="Ingrese su correo electrónico"
-                    />
+                  <div>
+                    <h4 className="font-medium mb-1">Redes Sociales</h4>
+                    <div className="flex space-x-3">
+                      <a
+                        href="https://www.instagram.com/claudiasimon.estudiojuridico/"
+                        className="text-[#5c4532] hover:text-[#8e6b4e]"
+                      >
+                        <Instagram size={20} />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/estudiojuridicoclaudiasimon"
+                        className="text-[#5c4532] hover:text-[#8e6b4e]"
+                      >
+                        <Facebook size={20} />
+                      </a>
+                    </div>
                   </div>
-
-                  <div className="mb-4">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="telefono"
-                    >
-                      Teléfono
-                    </label>
-                    <input
-                      type="tel"
-                      id="telefono"
-                      value={formData.telefono}
-                      onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
-                      placeholder="Ingrese su número de teléfono"
-                    />
-                  </div>
-
-                  <div className="mb-4">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="asunto"
-                    >
-                      Asunto
-                    </label>
-                    <select
-                      id="asunto"
-                      value={formData.asunto}
-                      onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
-                    >
-                      <option value="">Seleccione un área de consulta</option>
-                      <option value="familia">Derecho de Familia</option>
-                      <option value="laboral">Derecho Laboral</option>
-                      <option value="civil">Derecho Civil</option>
-                      <option value="jubilaciones">
-                        Jubilaciones y Pensiones
-                      </option>
-                      <option value="comercial">Derecho Comercial</option>
-                      <option value="otro">Otro</option>
-                    </select>
-                  </div>
-
-                  <div className="mb-6">
-                    <label
-                      className="block text-gray-700 text-sm font-medium mb-2"
-                      htmlFor="mensaje"
-                    >
-                      Mensaje
-                    </label>
-                    <textarea
-                      id="mensaje"
-                      value={formData.mensaje}
-                      onChange={handleFormChange}
-                      className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5c4532] focus:border-transparent transition-all"
-                      placeholder="Describa brevemente su consulta"
-                      rows="4"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    onClick={handleSubmit}
-                    className="w-full bg-[#5c4532] text-white py-3 rounded hover:bg-[#8e6b4e] transition-all font-medium"
-                  >
-                    Enviar Consulta
-                  </button>
                 </div>
               </div>
             </div>
