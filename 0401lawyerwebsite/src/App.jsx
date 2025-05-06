@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 import Inicio from './pages/Inicio';
 // import Nosotros from './pages/Nosotros';
@@ -11,7 +11,7 @@ import Inicio from './pages/Inicio';
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="content">
         <Routes>
           <Route path="/" element={<Inicio />} />
