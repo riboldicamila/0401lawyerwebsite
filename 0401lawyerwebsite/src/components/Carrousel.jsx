@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-// Note: You'll need to install these packages:
-// npm install swiper@10
-// And import the CSS in your main file:
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -17,42 +14,66 @@ export default function Carrousel() {
   const features = [
     {
       id: 1,
-      title: "Local Insight, National Power",
+      title: "Expertos en su área",
       description:
-        "With strong roots in the Grand Strand, we provide valuable insights that make a difference, backed by a formidable national network of insurers.",
-      image: "/api/placeholder/600/400", // Replace with your actual image
+        "Conocé a nuestro equipo de abogados especializados, listos para brindarte asesoramiento personalizado y soluciones legales a tu medida.",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542459/clau_xeskkb.png",
     },
     {
+        id: 7,
+        title: "Estamos para vos",
+        description:
+          "No importa cuál sea tu situación legal, estamos acá para escucharte y ayudarte. Deslizá el carrusel y descubrí cómo podemos acompañarte.",
+        image:
+          "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542342/general_aa7rnx.png",
+      },
+    {
       id: 2,
-      title: "Tailored Risk Management",
+      title: "Servicios Legales",
       description:
-        "We craft exclusive solutions for your unique risks, enhancing operational efficiency and driving profitability.",
-      image: "/api/placeholder/600/400", // Replace with your actual image
+        "¡Conocé todos los servicios legales que ofrecemos en el estudio! Nuestro objetivo es acompañarte en cada etapa, defendiendo tus derechos con compromiso y cercanía.",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542109/IMG_4778_yftql5.jpg",
+    },
+    {
+      id: 8,
+      title: "Ubicación y Consultas",
+      description:
+        "Estamos ubicados en Rawson 11, Campana, Argentina. Contactanos para hacer tu consulta.",
+      image:
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543130/clau2_unucjd.png",
     },
     {
       id: 3,
-      title: "Expert-Driven Solutions",
+      title: "Derecho de Familia",
       description:
-        "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
-      image: "/api/placeholder/600/400", // Replace with your actual image
+        "Divorcios, tenencia, régimen de comunicación, adopciones, alimentos y más.",
+      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543199/pexels-photo-7876053_on0kt4.jpg",
     },
     {
       id: 4,
-      title: "Expert-Driven Solutions",
+      title: "Derecho Laboral",
       description:
-        "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
-      image: "/api/placeholder/600/400", // Replace with your actual image
+        "Despidos injustificados, acoso laboral, reclamos salariales y defensa del trabajador.",
+      image: "https://images.pexels.com/photos/4481258/pexels-photo-4481258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: 5,
-      title: "Expert-Driven Solutions",
+      title: "Derecho Civil",
       description:
-        "Our specialized products and deep industry expertise guarantee you get the right coverage at the most competitive premiums.",
-      image: "/api/placeholder/600/400", // Replace with your actual image
+        "Sucesiones, daños y perjuicios, derecho inmobiliario, accidentes (ART).",
+      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543718/2b54ebb1-8ba9-40bd-8973-d0234a6eabad_m8xln8.jpg",
+    },
+    {
+      id: 6,
+      title: "Jubilaciones y Pensiones",
+      description:
+        "Te asesoramos y acompañamos en cada paso para que accedas a lo que te corresponde.",
+      image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746543608/pexels-photo-7681200_dcctxm.jpg",
     },
   ];
 
-  // Handle scroll visibility with Intersection Observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -77,32 +98,30 @@ export default function Carrousel() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 md:py-24 overflow-hidden bg-gray-900"
+      className="relative pt-40 md:pt-60 pb-16 md:pb-24 overflow-hidden bg-gray-900"
     >
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/60 to-[#1a1a1a]/80"></div>
-        <img
-          src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746526986/closeup-shot-dome-with-victoria-statue-metropolis-building-madrid-spain_181624-32258_o4gdbr.jpg"
-          alt="Background"
-          className="object-cover w-full h-full"
-        />
+        <div
+          className="w-full h-full bg-fixed bg-center bg-cover"
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/dav7tzdzv/image/upload/v1746541502/analog-landscape-city-with-buildings_23-2149661458_gxb6bj.jpg')",
+          }}
+        ></div>
       </div>
 
-      {/* Content Container */}
       <div className="container mx-auto px-4 relative z-10">
-        {/* Title with animation */}
         <div
           className={`text-center mb-16 transform transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Why Choose BME?
+            Estudio Jurídico Especializado
           </h2>
         </div>
 
-        {/* Swiper Carousel */}
         <div
           className={`transform transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -164,7 +183,6 @@ export default function Carrousel() {
             ))}
           </Swiper>
 
-          {/* Custom Pagination */}
           <div
             ref={paginationRef}
             className="flex justify-center items-center mt-6 space-x-2"

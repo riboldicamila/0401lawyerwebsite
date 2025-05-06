@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown, Phone, Mail, MapPin, Clock } from "lucide-react";
 import Carrousel from "../components/Carrousel";
+import ScrollBackground from "../components/ScrollBackground";
 
 export default function Inicio() {
   const [formData, setFormData] = useState({
@@ -73,7 +74,7 @@ export default function Inicio() {
                     <img
                       src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746536481/claudia_e9whvu.jpg"
                       alt="Dra. Claudia Simón"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover object-right rounded-lg"
                     />
                   </div>
 
@@ -100,7 +101,7 @@ export default function Inicio() {
         {/* Gradient fade at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
-
+       
       <Carrousel />
 
       {/* Áreas de Práctica */}
@@ -216,6 +217,9 @@ export default function Inicio() {
           </div>
         </div>
       </section>
+
+      <ScrollBackground />
+
 
       {/* Testimonios */}
       <section className="py-16 bg-white">
