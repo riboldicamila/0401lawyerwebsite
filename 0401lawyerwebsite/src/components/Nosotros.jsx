@@ -18,10 +18,8 @@ export default function Nosotros() {
     },
   ];
   
-  // Reference to video element to control playback speed
   const videoRef = useRef(null);
   
-  // Set playback rate when component mounts
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.8; // Reduce speed to half

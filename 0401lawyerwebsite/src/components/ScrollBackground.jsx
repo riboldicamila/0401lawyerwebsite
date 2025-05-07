@@ -5,7 +5,6 @@ const ScrollBackground = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const { scrollY } = useScroll();
   
-  // Transform values for text animations
   const textOpacity = useTransform(scrollY, [0, 100], [1, 0.8]);
   const textY = useTransform(scrollY, [0, 100], [0, -10]);
   

@@ -16,15 +16,15 @@ export default function Carrousel() {
       id: 1,
       title: "Expertos en su área",
       description:
-        "Conocé a nuestro equipo de abogados especializados, listos para brindarte asesoramiento personalizado y soluciones legales a tu medida.",
+        "Conocé a nuestro equipo, listos para brindarte asesoramiento personalizado y soluciones legales a tu medida.",
       image:
-        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542459/clau_xeskkb.png",
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746606938/clau_hbjyyh.png",
     },
     {
       id: 7,
       title: "Estamos para vos",
       description:
-        "No importa cuál sea tu situación legal, estamos acá para escucharte y ayudarte. Deslizá el carrusel y descubrí cómo podemos acompañarte.",
+        "No importa cuál sea tu situación legal, estamos acá para escucharte y ayudarte.",
       image:
         "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542342/general_aa7rnx.png",
     },
@@ -32,9 +32,9 @@ export default function Carrousel() {
       id: 2,
       title: "Servicios Legales",
       description:
-        "¡Conocé todos los servicios legales que ofrecemos en el estudio! Nuestro objetivo es acompañarte en cada etapa, defendiendo tus derechos con compromiso y cercanía.",
+        "¡Conocé todos los servicios legales que ofrecemos en el estudio! Nuestro objetivo es acompañarte en cada etapa.",
       image:
-        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746542109/IMG_4778_yftql5.jpg",
+        "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746606876/IMG_4778_1_ehrh8h.jpg",
     },
     {
       id: 8,
@@ -115,13 +115,13 @@ export default function Carrousel() {
         ></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-1 md:px-12 relative z-10">
         <div
           className={`text-center mb-16 transform transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-white mb-4 ">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium text-white mb-4">
             Estudio Jurídico Especializado
           </h2>
         </div>
@@ -165,8 +165,8 @@ export default function Carrousel() {
             }}
           >
             {features.map((feature) => (
-              <SwiperSlide key={feature.id} className="pb-12">
-                <div className="bg-white rounded-none overflow-hidden h-full flex flex-col transition-transform duration-300 hover:shadow-lg transform hover:-translate-y-1">
+              <SwiperSlide key={feature.id} className="pb-12 h-full flex">
+                <div className="bg-white rounded-none overflow-hidden flex flex-col flex-grow w-full transition-transform duration-300 hover:shadow-lg transform hover:-translate-y-1">
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={feature.image}
@@ -178,7 +178,7 @@ export default function Carrousel() {
                     <h3 className="text-xl font-serif font-bold mb-2 text-center text-[#5c4532]">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600 text-sm text-center">
+                    <p className="text-gray-600 text-sm text-center flex-grow">
                       {feature.description}
                     </p>
                   </div>
