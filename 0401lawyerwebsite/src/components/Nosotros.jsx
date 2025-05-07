@@ -7,13 +7,13 @@ export default function Nosotros() {
     {
       id: 1,
       name: "Dra. Claudia Simón",
-      position: "DIRECTORA",
+      position: "ABOGADA U.B.A",
       image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746557856/e8b33de7-8133-4906-b679-0d08b2dbef54_yjwklb.jpg",
     },
     {
       id: 2,
       name: "Manuel Lombao",
-      position: "ABOGADO ASOCIADO",
+      position: "ABOGADO U.B.A",
       image: "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746557848/482204996_1154156153074138_8887014398218258912_n_1_tb2pfb.jpg",
     },
   ];

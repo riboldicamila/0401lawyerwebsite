@@ -1,48 +1,49 @@
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+
 export default function Footer() {
   return (
-    <footer className="bg-[#4a4a4a] text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between">
+    <footer className="bg-black text-white py-24">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <div className="flex items-center mb-4">
-              <div className="text-3xl font-serif italic">
-                <span className="text-[#b89f7e]">S</span>
-              </div>
+            <div className="flex items-center mb-6">
               <div className="ml-2">
-                <h3 className="text-lg font-medium">
+                <h3 className="text-lg font-sans font-medium">
                   Dra. Claudia Simón & Asoc.
                 </h3>
-                <p className="text-sm text-gray-300">Estudio Jurídico</p>
+                <p className="text-sm font-sans text-[#f5f0e8]">Estudio Jurídico</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-[#f5f0e8] mb-6">
               Asesoramiento legal profesional y personalizado en diversas áreas
               del derecho.
             </p>
             <div className="flex space-x-4">
-              {["facebook", "instagram", "linkedin", "twitter"].map(
-                (social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="bg-[#5c4532] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#8e6b4e] transition-all"
-                  >
-                    <span className="sr-only">{social}</span>
-                    {/* Aquí irían los íconos de redes sociales */}
-                  </a>
-                )
-              )}
+              <a
+                href="#"
+                className="bg-[#816146] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a67e5b] transition-all duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook size={18} />
+              </a>
+              <a
+                href="#"
+                className="bg-[#816146] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a67e5b] transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
             </div>
           </div>
 
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <h3 className="text-lg font-medium mb-4">Enlaces Rápidos</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-sans font-medium mb-6 text-[#a67e5b]">Enlaces Rápidos</h3>
+            <ul className="space-y-3">
               {["INICIO", "NOSOTROS", "SERVICIOS", "CONTACTO"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
-                    className="text-gray-300 hover:text-white hover:underline transition-all"
+                    className="text-[#f5f0e8] hover:text-white hover:pl-2 transition-all duration-300 font-sans"
                   >
                     {item}
                   </a>
@@ -52,8 +53,8 @@ export default function Footer() {
           </div>
 
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <h3 className="text-lg font-medium mb-4">Servicios</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-sans font-medium mb-6 text-[#a67e5b]">Servicios</h3>
+            <ul className="space-y-3">
               {[
                 "Derecho de Familia",
                 "Derecho Laboral",
@@ -64,7 +65,7 @@ export default function Footer() {
                 <li key={item}>
                   <a
                     href="#"
-                    className="text-gray-300 hover:text-white hover:underline transition-all"
+                    className="text-[#f5f0e8] hover:text-white hover:pl-2 transition-all duration-300 font-sans"
                   >
                     {item}
                   </a>
@@ -74,25 +75,20 @@ export default function Footer() {
           </div>
 
           <div className="md:w-1/4">
-            <h3 className="text-lg font-medium mb-4">Horario de Atención</h3>
-            <ul className="space-y-2 text-gray-300">
+            <h3 className="text-lg font-sans font-medium mb-6 text-[#a67e5b]">Horario de Atención</h3>
+            <ul className="space-y-3 text-[#f5f0e8] font-sans">
               <li className="flex justify-between">
                 <span>Lunes - Viernes:</span>
-                <span>9:00 - 18:00</span>
+                <span>10:00 - 20:00</span>
               </li>
-              <li className="flex justify-between">
-                <span>Sábados:</span>
-                <span>Solo con cita previa</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Domingos:</span>
-                <span>Cerrado</span>
+              <li className="mt-4 pt-4 border-t border-[#816146]">
+                <p className="font-sans">Contacta para hacer cita previa</p>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-600 mt-12 pt-6 text-center text-gray-400 text-sm">
+        <div className="border-t border-[#816146] mt-12 pt-8 text-center text-[#f5f0e8] text-sm font-sans">
           <p>
             © {new Date().getFullYear()} Dra. Claudia Simón & Asociados. Todos
             los derechos reservados.
