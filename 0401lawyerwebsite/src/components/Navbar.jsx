@@ -22,7 +22,7 @@ export default function Navbar() {
     >
       {/* Top black bar */}
       <div className="bg-black text-white text-xs w-full flex items-center py-2">
-        <div className="container mx-auto px-4 flex items-center">
+        <div className="container mx-auto px-4 flex items-center font-serif">
           <MapPin size={12} className="mr-1" />
           <span>Rawson 11, Campana, Argentina</span>
         </div>
