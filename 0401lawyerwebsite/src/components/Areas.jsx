@@ -21,7 +21,7 @@ export default function Areas() {
   );
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white font-serif">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-12"

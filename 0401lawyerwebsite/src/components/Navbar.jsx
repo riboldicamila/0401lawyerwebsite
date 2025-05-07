@@ -9,7 +9,20 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+
+      const sections = ["inicio", "nosotros", "servicios", "contacto"];
+      for (let id of sections) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(id);
+            break;
+          }
+        }
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -33,8 +46,11 @@ export default function Navbar() {
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746539200/black-logo_y25bjf.png" alt="Logo" className="h-8 md:h-10" />
-
+            <img
+              src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746539200/black-logo_y25bjf.png"
+              alt="Logo"
+              className="h-8 md:h-10"
+            />
             <div className="ml-2 hidden md:block">
               <h1 className="text-lg font-medium">
                 Dra. Claudia Simón & Asoc.
@@ -45,18 +61,23 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {["INICIO", "NOSOTROS", "SERVICIOS", "CONTACTO"].map((item) => (
-              <button
-                key={item}
-                onClick={() => setActiveSection(item.toLowerCase())}
+            {[
+              { name: "INICIO", href: "#inicio" },
+              { name: "NOSOTROS", href: "#nosotros" },
+              { name: "SERVICIOS", href: "#servicios" },
+              { name: "CONTACTO", href: "#contacto" },
+            ].map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
                 className={`text-sm font-medium transition-all hover:text-[#5c4532] ${
-                  activeSection === item.toLowerCase()
+                  activeSection === item.href.slice(1)
                     ? "text-[#5c4532] border-b-2 border-[#5c4532]"
                     : "text-gray-700"
                 }`}
               >
-                {item}
-              </button>
+                {item.name}
+              </a>
             ))}
           </nav>
 
@@ -74,21 +95,24 @@ export default function Navbar() {
           <div className="md:hidden bg-white shadow-lg">
             <div className="container mx-auto px-4 py-3">
               <div className="flex flex-col space-y-3">
-                {["INICIO", "NOSOTROS", "SERVICIOS", "CONTACTO"].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => {
-                      setActiveSection(item.toLowerCase());
-                      setIsMenuOpen(false);
-                    }}
+                {[
+                  { name: "INICIO", href: "#inicio" },
+                  { name: "SERVICIOS", href: "#servicios" },
+                  { name: "NOSOTROS", href: "#nosotros" },
+                  { name: "CONTACTO", href: "#contacto" },
+                ].map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
                     className={`text-sm font-medium p-2 transition-all hover:bg-[#f5f0e8] ${
-                      activeSection === item.toLowerCase()
+                      activeSection === item.href.slice(1)
                         ? "text-[#5c4532] bg-[#f5f0e8]"
                         : "text-gray-700"
                     }`}
                   >
-                    {item}
-                  </button>
+                    {item.name}
+                  </a>
                 ))}
               </div>
             </div>

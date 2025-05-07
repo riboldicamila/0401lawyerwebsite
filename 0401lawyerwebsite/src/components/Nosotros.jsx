@@ -47,7 +47,7 @@ export default function Nosotros() {
   return (
     <div className="bg-white overflow-hidden">
       {/* About Section */}
-      <section className="py-16 md:py-24 bg-[#f8f6f2] relative">
+      <section className="py-16 md:py-24 bg-[#f8f6f2] relative font-serif">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2 w-full">
@@ -116,7 +116,7 @@ export default function Nosotros() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 md:py-24 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-white relative overflow-hidden font-serif">
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div
             className={`text-center mb-16 transition-all duration-700 ${

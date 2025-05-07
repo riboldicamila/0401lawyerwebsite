@@ -21,7 +21,7 @@ export default function Inicio() {
   return (
     <div className="font-sans text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <section className="pt-16 md:pt-24 lg:pt-28 relative bg-[#f8f6f2]">
+      <section id="inicio" className="pt-16 md:pt-24 lg:pt-28 relative bg-[#f8f6f2] font-serif">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-16 lg:py-20">
           <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
             <div className="md:w-1/2 md:pr-4 lg:pr-8 z-10">
@@ -31,7 +31,7 @@ export default function Inicio() {
                   profesional y personalizado
                 </span>
               </h1>
-              <p className="text-gray-600 mb-6 md:mb-8 max-w-lg text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-600  font-serif mb-6 md:mb-8 max-w-lg text-sm sm:text-base leading-relaxed">
                 Nuestro estudio jurídico cuenta con más de 15 años de
                 experiencia brindando soluciones legales efectivas en diversas
                 áreas del derecho.
@@ -91,13 +91,19 @@ export default function Inicio() {
 
       <Carrousel />
 
-      <Areas />
+      <section id="servicios">
+        <Areas />
+      </section>
 
-      <Nosotros />
+      <section id="nosotros">
+        <Nosotros />
+      </section>
 
       <ScrollBackground />
 
-      <Contacto />
+      <section id="contacto">
+        <Contacto />
+      </section>
     </div>
   );
 }
