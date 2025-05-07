@@ -1,8 +1,38 @@
+import { useEffect, useState } from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const footer = document.querySelector("footer");
+    if (footer) {
+      observer.observe(footer);
+    }
+
+    return () => {
+      if (footer) {
+        observer.unobserve(footer);
+      }
+    };
+  }, []);
+
   return (
-    <footer className="bg-black text-white py-24 font-serif">
+    <footer
+      className={`bg-black text-white py-24 font-serif transition-all duration-700 ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="mb-8 md:mb-0 md:w-1/4">

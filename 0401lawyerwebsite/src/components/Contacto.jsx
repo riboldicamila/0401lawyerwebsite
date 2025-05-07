@@ -15,7 +15,7 @@ import {
 export default function Contacto() {
   return (
     <section className="py-40 bg-[#f8f6f2]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 font-serif">
         <div className="flex flex-col md:flex-row justify-center">
           <div className="md:w-2/3">
             <h6 className="text-[#5c4532] font-medium mb-2">CONTÁCTENOS</h6>

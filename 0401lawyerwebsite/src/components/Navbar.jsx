@@ -63,8 +63,8 @@ export default function Navbar() {
           <nav className="hidden md:flex space-x-8">
             {[
               { name: "INICIO", href: "#inicio" },
-              { name: "NOSOTROS", href: "#nosotros" },
               { name: "SERVICIOS", href: "#servicios" },
+              { name: "NOSOTROS", href: "#nosotros" },
               { name: "CONTACTO", href: "#contacto" },
             ].map((item) => (
               <a

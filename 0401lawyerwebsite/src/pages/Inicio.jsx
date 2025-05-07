@@ -1,16 +1,4 @@
-import {
-  Menu,
-  X,
-  ChevronDown,
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  MessageCircle,
-  ExternalLink,
-  Instagram,
-  Facebook,
-} from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Carrousel from "../components/Carrousel";
 import ScrollBackground from "../components/ScrollBackground";
 import Nosotros from "../components/Nosotros";
@@ -37,16 +25,25 @@ export default function Inicio() {
                 áreas del derecho.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <button className="bg-[#5c4532] text-white px-4 py-2 md:px-5 md:py-3 text-sm md:text-base rounded hover:bg-[#8e6b4e] transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
+                {/* "Hacé tu consulta" button: Link to Contact section */}
+                <a
+                  href="#contacto"
+                  className="bg-[#5c4532] text-white px-4 py-2 md:px-5 md:py-3 text-sm md:text-base rounded hover:bg-[#8e6b4e] transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
+                >
                   Hacé tu consulta
                   <ChevronDown
                     size={16}
                     className="transition-transform group-hover:rotate-180"
                   />
-                </button>
-                <button className="border border-[#5c4532] text-[#5c4532] px-4 py-2 md:px-5 md:py-3 text-sm md:text-base rounded hover:bg-[#f5f0e8] transition-all duration-300 shadow-sm hover:shadow-md">
+                </a>
+
+                {/* "Servicios" button: Link to Servicios section */}
+                <a
+                  href="#servicios"
+                  className="border border-[#5c4532] text-[#5c4532] px-4 py-2 md:px-5 md:py-3 text-sm md:text-base rounded hover:bg-[#f5f0e8] transition-all duration-300 shadow-sm hover:shadow-md"
+                >
                   Servicios
-                </button>
+                </a>
               </div>
             </div>
 

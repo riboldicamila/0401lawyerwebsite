@@ -44,6 +44,14 @@ export default function Nosotros() {
     };
   }, []);
 
+  // Scroll to "contacto" section
+  const handleContactClick = () => {
+    const contactoSection = document.getElementById("contacto");
+    if (contactoSection) {
+      contactoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="bg-white overflow-hidden">
       {/* About Section */}
@@ -103,7 +111,10 @@ export default function Nosotros() {
                     className="w-16 h-16 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
                   />
                   <div className="h-10 w-0.5 bg-gray-200"></div>
-                  <button className="px-6 py-3 bg-[#5c4532] text-white rounded hover:bg-[#4a3628] transition-colors duration-300 font-medium text-sm tracking-wider shadow-md hover:shadow-lg">
+                  <button
+                    onClick={handleContactClick}
+                    className="px-6 py-3 bg-[#5c4532] text-white rounded hover:bg-[#4a3628] transition-colors duration-300 font-medium text-sm tracking-wider shadow-md hover:shadow-lg"
+                  >
                     CONTACTAR
                   </button>
                 </div>
