@@ -28,7 +28,7 @@ export default function MainSection() {
                 </h1>
               </div>
               <p className="text-gray-600 mb-6 max-w-lg text-base leading-relaxed mx-auto">
-                Nuestro estudio jurídico cuenta con más de 15 años de
+                Nuestro estudio jurídico cuenta con más de 30 años de
                 experiencia brindando soluciones legales efectivas en diversas
                 áreas del derecho.
               </p>
@@ -72,7 +72,7 @@ export default function MainSection() {
                       Dra. Claudia Simón
                     </p>
                     <p className="text-white text-xs opacity-90">
-                      Abogada especialista en derecho civil
+                      Abogada U.B.A
                     </p>
                   </div>
                 </div>
