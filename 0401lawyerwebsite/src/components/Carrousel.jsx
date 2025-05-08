@@ -121,7 +121,7 @@ export default function Carrousel() {
         <div className="text-center relative mb-16 px-4">
           <div className="flex items-center justify-center">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-serif italic font-light text-white opacity-80 mx-4">
-              Estudio Jurídico Especializado
+              Estudio Jurídico 
             </h2>
           </div>
         </div>
