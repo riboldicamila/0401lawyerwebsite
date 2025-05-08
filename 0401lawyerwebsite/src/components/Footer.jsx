@@ -110,9 +110,9 @@ export default function Footer() {
               <li className="flex justify-between">
                 <span>Lunes a Viernes con cita previa</span>
               </li>
-              <li className="mt-4 pt-4 border-t border-[#816146]">
+              {/* <li className="mt-4 pt-4 border-t border-[#816146]">
                 <p>Escribinos para coordinar tu turno</p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
