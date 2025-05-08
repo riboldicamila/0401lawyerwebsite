@@ -108,8 +108,7 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">Horario de Atención</h3>
             <ul className="space-y-3 text-[#f5f0e8]">
               <li className="flex justify-between">
-                <span>Lunes - Viernes:</span>
-                <span>10:00 - 20:00</span>
+                <span>Lunes a Viernes con cita previa</span>
               </li>
               <li className="mt-4 pt-4 border-t border-[#816146]">
                 <p>Escribinos para coordinar tu turno</p>

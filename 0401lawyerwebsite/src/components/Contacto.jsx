@@ -69,9 +69,8 @@ export default function Contacto() {
                 <div>
                   <h4 className="font-medium mb-1">Horario de atención</h4>
                   <p className="text-gray-600">
-                    Lunes a Viernes: 8:30 - 12:30 y 16:30 - 19:30
+                    Con cita previa.
                   </p>
-                  <p className="text-gray-600">Sábados: Cerrado</p>
                 </div>
               </div>
 
