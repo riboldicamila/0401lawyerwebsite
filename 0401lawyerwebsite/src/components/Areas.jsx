@@ -59,7 +59,7 @@ export default function Areas() {
                 title: "Derecho de Familia",
                 icon: <Users size={32} className="text-gray-700" />,
                 description:
-                  "Divorcios, sucesiones, régimen patrimonial, filiación y adopciones.",
+                  "Divorcios, sucesiones, régimen patrimonial y filiación.",
               },
               {
                 title: "Derecho Laboral",
