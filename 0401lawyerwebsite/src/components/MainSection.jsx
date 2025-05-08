@@ -76,10 +76,6 @@ export default function MainSection() {
                     </p>
                   </div>
                 </div>
-
-                {/* Decorative elements */}
-                <div className="absolute -bottom-4 -left-4 w-1/2 h-1/2 border-2 border-[#5c4532] rounded-lg opacity-30 z-10 hidden lg:block"></div>
-                <div className="absolute top-8 left-0 w-1/3 h-1/4 bg-[#f0e6d9] rounded-lg z-0 hidden lg:block"></div>
               </div>
             </div>
           </div>
