@@ -79,7 +79,7 @@ export default function Contacto() {
                   <MessageCircle size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">WhatsApp</h4>
+                  <h4 className="font-medium mb-1">WhatsApp | 24hs</h4>
                   <p className="text-gray-600">
                     <a
                       href="https://api.whatsapp.com/send/?phone=5493489452601&text&type=phone_number&app_absent=0"
