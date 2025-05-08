@@ -91,7 +91,7 @@ export default function Nosotros() {
                     : "opacity-0 translate-y-10"
                 }`}
               >
-                <h6 className="text-[#5c4532] font-medium mb-3 tracking-widest text-sm">
+                <h6 className="text-[#5c4532] font-semibold mb-3 tracking-widest text-sm">
                   CONOZCA NUESTRO ESTUDIO
                 </h6>
                 <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6 text-gray-800">
@@ -136,7 +136,7 @@ export default function Nosotros() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h6 className="text-[#5c4532] font-medium mb-3 tracking-widest text-sm">
+            <h6 className="text-[#5c4532] font-semibold mb-3 tracking-widest text-sm">
               PROFESIONALES DEDICADOS
             </h6>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4 text-gray-800">

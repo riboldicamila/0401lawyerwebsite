@@ -111,19 +111,19 @@ export default function Carrousel() {
           style={{
             backgroundImage:
               "url('https://res.cloudinary.com/dav7tzdzv/image/upload/v1746541502/analog-landscape-city-with-buildings_23-2149661458_gxb6bj.jpg')",
+            filter: "sepia(0.6) brightness(0.9) contrast(1) saturate(0.6)",
+            opacity: 0.3,
           }}
         ></div>
       </div>
 
-      <div className="container mx-auto px-1 md:px-12 relative z-10">
-        <div
-          className={`text-center mb-16 transform transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium text-white mb-4">
-            Estudio Jurídico Especializado
-          </h2>
+      <div className="container mx-auto px-1 md:px-12 relative z-10 font-serif">
+        <div className="text-center relative mb-16 px-4">
+          <div className="flex items-center justify-center">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-serif italic font-light text-white opacity-80 mx-4">
+              Estudio Jurídico Especializado
+            </h2>
+          </div>
         </div>
 
         <div

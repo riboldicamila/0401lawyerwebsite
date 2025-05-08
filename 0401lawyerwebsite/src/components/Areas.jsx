@@ -10,20 +10,20 @@ import {
 
 export default function Areas() {
   const { scrollY } = useScroll();
-  
+
   const titleOpacity = useTransform(scrollY, [0, 100], [1, 0.85]);
   const titleScale = useTransform(scrollY, [0, 100], [1, 0.97]);
-  const lineWidth = useTransform(scrollY, [0, 100], [96, 120]); // w-24 to w-32 in pixels
+  const lineWidth = useTransform(scrollY, [0, 100], [96, 120]);
   const subtitleColor = useTransform(
-    scrollY, 
-    [0, 100], 
-    ["rgb(92, 69, 50)", "rgb(107, 114, 128)"]
+    scrollY,
+    [0, 100],
+    ["#5c4532", "rgb(107, 114, 128)"]
   );
 
   return (
     <section className="py-16 bg-white font-serif">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,26 +32,26 @@ export default function Areas() {
             scale: titleScale,
           }}
         >
-          <motion.h6 
-            className="font-medium mb-2"
-            style={{ color: subtitleColor }}
+          <motion.h6
+            className="font-semibold mb-2"
+            style={{ color: "#5c4532" }}
           >
             NUESTRAS ÁREAS
           </motion.h6>
-          
-          <motion.h2 
+
+          <motion.h2
             className="text-3xl font-serif font-medium"
             style={{ opacity: titleOpacity }}
           >
             Áreas de Práctica
           </motion.h2>
-          
-          <motion.div 
+
+          <motion.div
             className="h-1 bg-[#5c4532] mx-auto mt-4"
             style={{ width: lineWidth }}
           ></motion.div>
         </motion.div>
-        
+
         <div className="px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[

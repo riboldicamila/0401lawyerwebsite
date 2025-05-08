@@ -18,7 +18,7 @@ export default function Contacto() {
       <div className="container mx-auto px-4 font-serif">
         <div className="flex flex-col md:flex-row justify-center">
           <div className="md:w-2/3">
-            <h6 className="text-[#5c4532] font-medium mb-2">CONTÁCTENOS</h6>
+            <h6 className="text-[#5c4532] font-semibold mb-2">CONTÁCTENOS</h6>
             <h2 className="text-3xl font-serif font-medium mb-6">
               ¿Necesita asesoramiento legal?
             </h2>
