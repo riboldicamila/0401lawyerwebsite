@@ -69,7 +69,7 @@ export default function Contacto() {
                 <div>
                   <h4 className="font-medium mb-1">Horario de atención</h4>
                   <p className="text-gray-600">
-                    Con cita previa.
+                    Con cita previa
                   </p>
                 </div>
               </div>

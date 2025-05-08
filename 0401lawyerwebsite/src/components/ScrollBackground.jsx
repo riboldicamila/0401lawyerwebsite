@@ -42,7 +42,7 @@ const ScrollBackground = () => {
       >
         <div className="w-20 h-1 bg-[#5c4532] mx-auto mb-4"></div>
         <p className="text-2xl md:text-3xl font-serif italic">
-          Defensa legal honesta y cercana
+          Defensa legal, honesta y cercana
         </p>
         <div className="w-20 h-1 bg-[#5c4532] mx-auto mt-4"></div>
       </motion.div>
