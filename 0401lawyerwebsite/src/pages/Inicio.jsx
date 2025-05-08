@@ -9,17 +9,21 @@ export default function Inicio() {
   return (
     <div className="font-sans text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <section id="inicio" className="pt-16 md:pt-24 lg:pt-28 relative bg-[#f8f6f2] font-serif">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-16 lg:py-20">
+      <section
+        id="inicio"
+        className="pt-28 sm:pt-24 md:pt-24 lg:pt-28 relative bg-[#f8f6f2] font-serif overflow-hidden"
+      >
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-14 sm:py-12 md:py-16 lg:py-20 relative z-10">
           <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
-            <div className="md:w-1/2 md:pr-4 lg:pr-8 z-10">
+            {/* Text content - full width on mobile, half width on md+ */}
+            <div className="w-full md:w-1/2 md:pr-4 lg:pr-8 z-10 mb-12 md:mb-0">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-4 md:mb-6 text-[#4a4a4a]">
                 Asesoramiento legal{" "}
                 <span className="text-[#5c4532] block mt-1">
                   profesional y personalizado
                 </span>
               </h1>
-              <p className="text-gray-600  font-serif mb-6 md:mb-8 max-w-lg text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-600 font-serif mb-6 md:mb-8 max-w-lg text-sm sm:text-base leading-relaxed">
                 Nuestro estudio jurídico cuenta con más de 15 años de
                 experiencia brindando soluciones legales efectivas en diversas
                 áreas del derecho.
@@ -55,32 +59,40 @@ export default function Inicio() {
                 <div className="relative w-full h-full flex items-center justify-center">
                   {/* Left image (person) */}
                   <div className="absolute z-10 w-3/5 h-[95%] shadow-lg rounded-lg overflow-hidden left-0">
-                    <img
-                      src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746536481/claudia_e9whvu.jpg"
-                      alt="Dra. Claudia Simón"
+                  <img
+                    src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746536481/claudia_e9whvu.jpg"
+                    alt="Dra. Claudia Simón"
                       className="w-full h-full object-cover object-right rounded-lg"
-                    />
-                  </div>
+                  />
+                </div>
 
                   {/* Right video */}
                   <div className="absolute w-3/5 h-[80%] rounded-lg overflow-hidden shadow-xl right-0">
-                    <video
-                      autoPlay
-                      muted
-                      loop
+                  <video
+                    autoPlay
+                    muted
+                    loop
                       className="w-full h-full object-cover object-left rounded-lg"
-                    >
-                      <source
-                        src="https://res.cloudinary.com/dav7tzdzv/video/upload/v1746524667/6101151-uhd_2732_1440_30fps_ivjkdt.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                  >
+                    <source
+                      src="https://res.cloudinary.com/dav7tzdzv/video/upload/v1746524667/6101151-uhd_2732_1440_30fps_ivjkdt.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[#5c4532] opacity-5 -skew-x-12 transform translate-x-1/2 hidden lg:block"></div>
+
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#5c4532] opacity-5 rounded-full -mr-20 -mb-20 hidden lg:block"></div>
+
+        <div className="absolute top-10 left-0 text-gray-100 text-[12rem] font-bold opacity-5 select-none leading-none -z-10 hidden lg:block">
+          Legal
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-12 md:h-16 bg-gradient-to-t from-white to-transparent"></div>

@@ -33,7 +33,6 @@ export default function Navbar() {
         scrolled ? "bg-white shadow-md" : "bg-white/80"
       }`}
     >
-      {/* Top black bar */}
       <div className="bg-black text-white text-xs w-full flex items-center py-2">
         <div className="container mx-auto px-4 flex items-center font-serif">
           <MapPin size={12} className="mr-1" />
@@ -41,15 +40,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main navbar */}
       <div className={`w-full ${scrolled ? "py-2" : "py-4"}`}>
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 flex justify-between items-center font-serif">
           {/* Logo */}
           <div className="flex items-center">
             <img
               src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746539200/black-logo_y25bjf.png"
               alt="Logo"
-              className="h-8 md:h-10"
+              className="h-12 md:h-10"
             />
             <div className="ml-2 hidden md:block">
               <h1 className="text-lg font-medium">
