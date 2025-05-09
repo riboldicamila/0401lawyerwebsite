@@ -37,6 +37,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="mb-8 md:mb-0 md:w-1/4">
             <div className="flex items-center mb-6">
+              <img src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746776367/logo_clau-01_cbtqto.png" alt="Logo" className="h-12 w-auto" />
               <div className="ml-2">
                 <h3 className="text-lg font-medium">
                   Dra. Claudia Simón & Asoc.
@@ -67,7 +68,9 @@ export default function Footer() {
           </div>
 
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">Enlaces Rápidos</h3>
+            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">
+              Enlaces Rápidos
+            </h3>
             <ul className="space-y-3">
               {["INICIO", "NOSOTROS", "SERVICIOS", "CONTACTO"].map((item) => (
                 <li key={item}>
@@ -83,7 +86,9 @@ export default function Footer() {
           </div>
 
           <div className="mb-8 md:mb-0 md:w-1/4">
-            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">Servicios</h3>
+            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">
+              Servicios
+            </h3>
             <ul className="space-y-3">
               {[
                 "Derecho de Familia",
@@ -105,7 +110,9 @@ export default function Footer() {
           </div>
 
           <div className="md:w-1/4">
-            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">Horario de Atención</h3>
+            <h3 className="text-lg font-medium mb-6 text-[#a67e5b]">
+              Horario de Atención
+            </h3>
             <ul className="space-y-3 text-[#f5f0e8]">
               <li className="flex justify-between">
                 <span>Lunes a Viernes con cita previa</span>
