@@ -5,11 +5,12 @@ import Nosotros from "../components/Nosotros";
 import Areas from "../components/Areas";
 import Contacto from "../components/Contacto";
 import MainSection from "../components/MainSection";
+import MainSectionOption from "../components/MainSectionOption";
 
 export default function Inicio() {
   return (
     <div className="font-sans text-gray-800 min-h-screen">
-      <MainSection />
+      <MainSectionOption />
 
       <Carrousel />
 
