@@ -29,7 +29,7 @@ const MainSectionOption = () => {
   };
 
   return (
-    <section className="relative w-full bg-white">
+    <section  id="inicio" className="relative w-full bg-white ">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="h-[50vh] lg:h-[100vh]">
           <ImageCarousel images={images} />
