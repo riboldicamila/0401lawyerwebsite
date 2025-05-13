@@ -37,7 +37,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="mb-8 md:mb-0 md:w-1/4">
             <div className="flex items-center mb-6">
-              <img src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746776367/logo_clau-01_cbtqto.png" alt="Logo" className="h-12 w-auto" />
+              <img
+                src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746776367/logo_clau-01_cbtqto.png"
+                alt="Logo"
+                className="h-12 w-auto"
+              />
               <div className="ml-2">
                 <h3 className="text-lg font-medium">
                   Dra. Claudia Simón & Asoc.
@@ -51,16 +55,20 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/estudiojuridicoclaudiasimon"
                 className="bg-[#816146] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a67e5b] transition-all duration-300"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={18} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/claudiasimon.estudiojuridico/"
                 className="bg-[#816146] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#a67e5b] transition-all duration-300"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram size={18} />
               </a>
