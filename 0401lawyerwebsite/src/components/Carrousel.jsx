@@ -120,9 +120,9 @@ export default function Carrousel() {
       <div className="container mx-auto px-1 md:px-12 relative z-10 font-serif">
         <div className="text-center relative mb-16 px-4">
           <div className="flex items-center justify-center">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-serif italic font-light text-white opacity-80 mx-4">
+            {/* <h2 className="text-xl md:text-2xl lg:text-3xl font-serif italic font-light text-white opacity-80 mx-4">
               Estudio Jurídico 
-            </h2>
+            </h2> */}
           </div>
         </div>
 
@@ -175,7 +175,7 @@ export default function Carrousel() {
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-serif font-bold mb-2 text-center text-[#5c4532]">
+                    <h3 className="text-xl font-serif font-bold mb-2 text-center text-gray-800">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 text-sm text-center flex-grow">

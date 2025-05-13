@@ -70,7 +70,7 @@ export default function Nosotros() {
                             transition-all duration-500 group-hover:scale-110 hidden md:block"
                 ></div>
 
-                <div className="rounded-lg shadow-xl z-10 relative overflow-hidden group h-72 md:h-96">
+                <div className="shadow-xl z-10 relative overflow-hidden group h-72 md:h-96">
                   <div className="relative overflow-hidden h-full">
                     <img
                       src="https://res.cloudinary.com/dav7tzdzv/image/upload/v1746606876/IMG_4778_1_ehrh8h.jpg"
@@ -112,10 +112,10 @@ export default function Nosotros() {
                   />
                   <div className="h-10 w-0.5 bg-gray-200"></div>
                   <button
+                    className="inline-flex items-center rounded-md bg-gray-900 px-6 py-3 text-base font-medium text-white transition-all hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 font-serif"
                     onClick={handleContactClick}
-                    className="px-6 py-3 bg-[#5c4532] text-white rounded hover:bg-[#4a3628] transition-colors duration-300 font-medium text-sm tracking-wider shadow-md hover:shadow-lg"
                   >
-                    CONTACTAR
+                    Contactar
                   </button>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Nosotros() {
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-4 text-gray-800">
               Nuestro equipo
             </h2>
-            <div className="w-20 h-1 bg-[#5c4532] mx-auto mb-6 opacity-60"></div>
+            <div className="w-20 h-1 bg-[#5c4532] mx-auto mb-6 "></div>
             <p className="text-lg text-gray-600 font-serif max-w-2xl mx-auto">
               Nuestro equipo de abogados aporta un profundo conocimiento
               jurídico.

@@ -11,14 +11,9 @@ import {
 export default function Areas() {
   const { scrollY } = useScroll();
 
-  const titleOpacity = useTransform(scrollY, [0, 100], [1, 0.85]);
+  const titleOpacity = useTransform(scrollY, [0, 100], [1, 0.95]);
   const titleScale = useTransform(scrollY, [0, 100], [1, 0.97]);
   const lineWidth = useTransform(scrollY, [0, 100], [96, 120]);
-  const subtitleColor = useTransform(
-    scrollY,
-    [0, 100],
-    ["#5c4532", "rgb(107, 114, 128)"]
-  );
 
   return (
     <section className="py-16 bg-white font-serif">
@@ -40,7 +35,7 @@ export default function Areas() {
           </motion.h6>
 
           <motion.h2
-            className="text-3xl font-serif font-medium"
+            className="text-3xl font-serif font-medium text-gray-800"
             style={{ opacity: titleOpacity }}
           >
             Áreas de Práctica
