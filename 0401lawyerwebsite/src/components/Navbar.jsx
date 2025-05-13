@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="bg-black text-white text-xs w-full flex items-center py-2">
         <div className="container mx-auto px-4 flex items-center font-serif">
           <MapPin size={12} className="mr-1" />
-          <span>Rawson 11, Campana, Argentina</span>
+          <span>Rawson 11, Campana, Argentina - (03489) 422409 </span>
         </div>
       </div>
 
