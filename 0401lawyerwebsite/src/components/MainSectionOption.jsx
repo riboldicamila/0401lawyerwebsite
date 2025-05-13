@@ -29,13 +29,13 @@ const MainSectionOption = () => {
   };
 
   return (
-    <section  id="inicio" className="relative w-full bg-white">
+    <section id="inicio" className="relative w-full bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="h-[50vh] lg:h-[100vh]">
+        <div className="h-[50vh] pt-35 lg:h-[100vh] lg:pt-0">
           <ImageCarousel images={images} />
         </div>
 
-        <div className="flex flex-col justify-center px-6 py-12 md:px-12 lg:px-16 xl:px-24">
+        <div className="flex flex-col justify-center px-6 pb-30 md:pt-12 md:pb-12 md:px-12 lg:px-16 xl:px-24">
           <div className="max-w-xl">
             <h1 className="font-serif text-3xl font-medium text-gray-900 md:text-4xl lg:text-5xl pt-24">
               Estudio Jurídico Dra. Claudia Simón y Asociados
