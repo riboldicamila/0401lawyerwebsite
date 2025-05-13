@@ -28,6 +28,13 @@ const MainSectionOption = () => {
     });
   };
 
+  const handleClick = () => {
+    const contactoSection = document.getElementById("contacto");
+    if (contactoSection) {
+      contactoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="inicio" className="relative w-full bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -71,7 +78,10 @@ const MainSectionOption = () => {
             </div>
 
             <div className="mt-12">
-              <button className="inline-flex items-center rounded-md bg-gray-900 px-6 py-3 text-base font-medium text-white transition-all hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 font-serif">
+              <button
+                className="inline-flex items-center rounded-md bg-gray-900 px-6 py-3 text-base font-medium text-white transition-all hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 font-serif"
+                onClick={handleClick}
+              >
                 Hacé tu consulta
               </button>
             </div>
