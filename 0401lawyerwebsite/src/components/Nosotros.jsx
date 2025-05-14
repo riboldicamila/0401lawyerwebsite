@@ -5,7 +5,7 @@ export default function Nosotros() {
   const teamMembers = [
     {
       id: 1,
-      name: "Dra. Claudia Simón",
+      name: "Claudia Simón",
       position: "ABOGADA U.B.A",
       image:
         "https://res.cloudinary.com/dav7tzdzv/image/upload/v1746557856/e8b33de7-8133-4906-b679-0d08b2dbef54_yjwklb.jpg",
